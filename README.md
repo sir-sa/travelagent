@@ -64,3 +64,61 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+Routes access documentation.
+
+Authentication
+    Register User
+    Login User
+    Logout User
+Authorized Routes
+    Accommodations
+    Contracts
+    Bookings
+
+
+Localhost Base URL: 
+    http://localhost:8000/api
+
+Register User
+    Endpoint: POST /register-user
+
+
+Login User
+    Endpoint: POST /login-user
+
+
+Logout User
+    Endpoint: POST /logout-user
+
+
+
+Authorized Routes
+To access the following routes, the request must include a valid authentication token obtained after successful login.
+
+Accommodations
+    Endpoints:
+
+    GET /accommodations
+    GET /accommodations/{id}
+    POST /accommodations
+    PUT /accommodations/{id}
+    DELETE /accommodations/{id}
+
+
+Contracts
+    Endpoints:
+
+    GET /contracts
+    GET /contracts/{id}
+    POST /contracts
+    PUT /contracts/{id}
+    DELETE /contracts/{id}
+
+
+Bookings
+    Endpoint: POST /bookings

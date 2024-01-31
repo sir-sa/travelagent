@@ -25,7 +25,6 @@ use Illuminate\Support\Facades\Route;
 Route::post('/register-user', [UserController::class, 'registerUser']);
 Route::post('/login-user', [UserController::class, 'loginPost']);
 
-// Route::resource('accommodations', AccommodationController::class);
 
 Route::middleware(['api','auth:sanctum'])->group(function () {
     Route::post('/logout-user', [UserController::class, 'logout']);
